@@ -1,0 +1,217 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  background-color: #f4f4f4;
+  margin-top: 18px;
+}
+
+.main {
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  border-radius: 15px;
+  background-color: #fff;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  height: 90vh;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Background Image */
+.design-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3B4MTE3OTM5My1pbWFnZS1rd3Z5MG94eC5qcGc.jpg') center center no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  animation: expand-and-slide 6s ease-in-out forwards;
+}
+
+/* Login Form on the Left */
+.login-container {
+  width: 50%;
+  height: 90vh;
+  padding-left: 10px;
+  padding-right: 20px;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 15px;
+  opacity: 0; /* Initially hidden */
+  z-index: 10;
+  position: relative;
+  animation: reveal-login 3s ease-in-out forwards;
+  animation-delay: 3s; /* Starts after background animation */
+}
+.top
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Top Section with Logo and Enroll Button */
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px;
+  height: 50px;
+}
+
+.enroll-section {
+  text-align: right;
+}
+
+.enroll-section p {
+  font-size: 14px;
+  color: gray;
+}
+
+.enroll-button {
+  background-color:#f4f4f4;
+  border: none;
+  color: green;
+  padding: 10px 20px;
+  font-size: 14px;
+  border: 1px solid #c6bebe;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.enroll-button:hover {
+  background-color: green;
+  color: #f4f4f4;
+}
+.login-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+/* Form Fields */
+.login-form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.subtext
+{
+  text-align: center;
+  font-size: 15px;
+}
+.login-form input {
+  width: 80%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.input-box {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 3px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+.input-box:focus {
+  border:2px solid #4CAF50;
+  font-weight: 600; /* Green border on focus */
+  outline: none; /* Remove default outline */
+}
+
+
+.remember-me {
+  display: flex;
+  align-items: start;
+  margin: 10px 0;
+}
+
+.login-button {
+  background-color:rgb(203, 193, 193);
+  border: none;
+  color: #fff;
+  padding: 15px 20px;
+  cursor: pointer;
+  width: 80%;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
+.login-button:hover {
+  background-color: #45a049;
+}
+
+.forgot-link {
+  display: block;
+  margin-top: 15px;
+  text-decoration: none;
+  color: #4CAF50;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+.copy-right {
+  margin-top: 30px;
+  font-size: 12px;
+  color: #aaa;
+}
+
+
+/* Background Image Animation */
+@keyframes expand-and-slide {
+  0% {
+    width: 0;
+    right: 0;
+  }
+  50% {
+    width: 100%;
+    right: 0;
+  }
+  100% {
+    width: 50%;
+    right: 0;
+  }
+}
+
+/* Login Form Reveal Animation */
+@keyframes reveal-login {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

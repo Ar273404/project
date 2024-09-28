@@ -1,46 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Animated Login Page</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="main">
-  <div class="container">
-    <div class="design-container"></div>
-    <div class="login-container">
-      <div class="top-section">
-        <div class="logo">
-        <img src="https://img.freepik.com/premium-vector/vibrant-stylized-illustration-bird-flight_1272475-9233.jpg?w=740" alt="Logo" width="100" height="100">
-        </div>
-        <div class="enroll-section">
-            <span class="copy-right">Are you are new Customer?</span>
-          <button class="enroll-button">Enroll Now</button>
-  <div class="dropdown-content">
-    <a href="#">Pay Your Mortgage</a>
-    <a href="#">Check Your Loan Status</a>
-    <a href="#">Mortgage Assistance</a>
-  </div>
-</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Login Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <div class="design-container"></div>
+        <div class="login-container">
+          <div class="top-section">
+            <div class="logo">
+              <img
+                src="https://img.freepik.com/premium-vector/vibrant-stylized-illustration-bird-flight_1272475-9233.jpg?w=740"
+                alt="Logo"
+                width="100"
+                height="100" />
+            </div>
+            <div class="enroll-section">
+              <span class="copy-right">Are you are new Customer?</span>
+              <button class="enroll-button">Enroll Now</button>
+              <div class="dropdown-content">
+                <a href="#">Pay Your Mortgage</a>
+                <a href="#">Check Your Loan Status</a>
+                <a href="#">Mortgage Assistance</a>
+              </div>
+            </div>
+          </div>
+          <div class="login-form">
+            <h2>Welcome Back</h2>
+            <p class="subtext">Signin to your Regions My Mortgages account</p>
+            <input
+              type="text"
+              placeholder="Online ID"
+              class="input-box"
+              required />
+            <input
+              type="password"
+              placeholder="Password"
+              class="input-box"
+              required />
+            <div class="remember-me">
+              <input type="checkbox" id="remember" class="box" />
+              <label for="remember">Remember me</label>
+            </div>
+            <!-- Login Button -->
+            <button
+              id="login-button"
+              class="login-button">
+              Login
+            </button>
 
-      </div>
-      <div class="login-form">
-        <h2>Welcome Back</h2>
-        <p class="subtext">Signin to your Regions My Mortgages account</p>
-        <input type="text" placeholder="Online ID" class="input-box" required>
-        <input type="password" placeholder="Password" class="input-box" required>
-        <div class="remember-me">
-          <input type="checkbox" id="remember" class="box">
-          <label for="remember">Remember me</label>
+            <a href="#" class="forgot-link">Forgot ID or password?</a>
+            <div class="footer">
+              <p class="copy-right">
+                &#x1F3E0;Equal Housing Lender.
+                <span class="first-span">Member FDC</span>
+              </p>
+              <p class="copy-right">
+                &copy;2024 Regions Financial Corporation || All Right Reserved.
+                <span class="second-span">1(800) REGIONS</span>
+              </p>
+            </div>
+          </div>
         </div>
-        <button type="submit" class="login-button">Login</button>
-        <a href="#" class="forgot-link">Forgot ID or password?</a>
-        <p class="copy-right">&copy;Regions Financial Corporation.All Right Reserved.</p>
       </div>
     </div>
-  </div>
-  </div>
-</body>
+  </body>
 </html>

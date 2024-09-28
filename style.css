@@ -1,4 +1,4 @@
-/* Reset CSS */
+
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +13,7 @@ body, html {
   margin-top: 18px;
 }
 
-/* Main container */
+/* main container */
 .main {
   padding: 20px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -28,7 +28,7 @@ body, html {
   overflow: hidden;
 }
 
-/* Container layout */
+/* container layout */
 .container {
   display: flex;
   justify-content: space-between;
@@ -38,7 +38,7 @@ body, html {
   position: relative;
 }
 
-/* Background Image */
+/* background image */
 .design-container {
   position: absolute;
   width: 100%;
@@ -49,7 +49,7 @@ body, html {
   animation: expand-and-slide 6s ease-in-out forwards;
 }
 
-/* Login Form Container */
+/* login form container */
 .login-container {
   width: 50%;
   height: 90vh;
@@ -66,7 +66,7 @@ body, html {
   animation-delay: 3s; /* Starts after background animation */
 }
 
-/* Top Section with Logo and Enroll Button */
+/* top section with logo and enroll button */
 .top {
   display: flex;
   justify-content: space-between;
@@ -189,6 +189,8 @@ body, html {
   background-color: #45a049;
 }
 
+
+
 .forgot-link {
   display: block;
   margin-top: 15px;
@@ -197,16 +199,29 @@ body, html {
 }
 
 .forgot-link:hover {
-  text-decoration: underline;
+  text-decoration:blueviolet;
 }
 
 /* Footer */
 .footer {
-  margin-top: auto;
+  margin-top:20px;
   text-align: center;
   font-size: 12px;
   color: #777;
   padding: 10px 0;
+  word-spacing:5px;
+}
+.footer p
+{
+  margin-top: 3px;
+}
+.first-span
+{
+  margin-left: 20px;
+}
+.second-span
+{
+  margin-left: 15px;
 }
 
 /* Enroll Dropdown */

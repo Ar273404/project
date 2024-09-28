@@ -11,7 +11,7 @@
   <div class="container">
     <div class="design-container"></div>
     <div class="login-container">
-      <div class="top">
+      <div class="top-section">
         <div class="logo">
         <img src="https://img.freepik.com/premium-vector/vibrant-stylized-illustration-bird-flight_1272475-9233.jpg?w=740" alt="Logo" width="100" height="100">
         </div>
@@ -23,12 +23,15 @@
       <div class="login-form">
         <h2>Welcome Back</h2>
         <p class="subtext">Signin to your regions my mortgages account</p>
-        <input type="text" placeholder="Enter your ID" class="input-box" required>
-        <input type="password" placeholder="Enter your Password" class="input-box" required>
+        <input type="text" placeholder="Online ID" class="input-box" required>
+        <input type="password" placeholder="Password" class="input-box" required>
         <div class="remember-me">
           <input type="checkbox" id="remember">
           <label for="remember">Remember me</label>
         </div>
+        <button type="button" class="button" onclick="this.classList.toggle('button--loading')">
+       <span class="button__text">Save</span>
+        </button>
         <button type="submit" class="login-button">Login</button>
         <a href="#" class="forgot-link">Forgot ID or password?</a>
         <p class="copy-right">&copy; 2024 MyCompany</p>
